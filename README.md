@@ -5,7 +5,7 @@
 ```elixir
 def deps do
   [
-    {:test_parrot, "~> 0.2.0"}
+    {:test_parrot, "~> 0.3.0"}
   ]
 end
 ```
@@ -95,8 +95,7 @@ In Elixir, in particular, do not:
   
   ```elixir
   defmodule SomeDependencyParrot do
-    import TestParrot
-    require TestParrot
+    use TestParrot
     # optional behaviour
     @behaviour Somewhere.DependentBehaviour
     #       scope,     function,             default-result

@@ -31,8 +31,7 @@ defmodule TestParrot.DemoTest do
 
   # define MyRepoParrot ----------------------------------------------------------------------
   defmodule MyRepoParrot do
-    import TestParrot
-    require TestParrot
+    use TestParrot
 
     @behaviour MyRepoBehaviour
     #                 scope,      function,           default-result

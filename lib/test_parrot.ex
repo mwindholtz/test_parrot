@@ -10,6 +10,13 @@ defmodule TestParrot do
       * whatever _term_ was told to say for that scope and function name
   """
 
+  defmacro __using__(_opts) do
+    quote do
+      import TestParrot
+      require TestParrot
+    end
+  end
+
   defmacro parrot(scope, name, default) do
     say_fn_name = String.to_atom("say_#{name}")
     var_name = String.to_atom("var_#{scope}_#{name}")

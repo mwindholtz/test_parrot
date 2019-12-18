@@ -3,14 +3,12 @@ defmodule TestParrotTest do
   use ExUnit.Case
 
   defmodule Module001Parrot do
-    import TestParrot
-    require TestParrot
+    use TestParrot
     parrot(:module_01, :my_function, :ok)
   end
 
   defmodule Module002Parrot do
-    import TestParrot
-    require TestParrot
+    use TestParrot
     parrot(:module_02, :my_function, :ok)
   end
 
