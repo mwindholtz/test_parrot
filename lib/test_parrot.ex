@@ -37,16 +37,16 @@ defmodule TestParrot do
         end
 
         Process.get(unquote(var_name), unquote(default))
-        |> function_or_value()
+        #  |> function_or_value()
       end
 
-      defp function_or_value(function_with_result) when is_function(function_with_result, 0) do
-        function_with_result.()
-      end
+      # defp function_or_value(function_with_result) when is_function(function_with_result, 0) do
+      #   function_with_result.()
+      # end
 
-      defp function_or_value(value) do
-        value
-      end
+      # defp function_or_value(value) do
+      #   value
+      # end
     end
   end
 end

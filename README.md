@@ -5,7 +5,7 @@
 ```elixir
 def deps do
   [
-    {:test_parrot, "~> 0.3.1"}
+    {:test_parrot, "~> 0.3.2"}
   ]
 end
 ```
