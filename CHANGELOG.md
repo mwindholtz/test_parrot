@@ -1,5 +1,6 @@
 # Change log
-
+## 0.3.1 2021-21-01
+adds: say(fn -> result end)
 ## 0.3.0 2019-12-18
 use TestParrot
 
