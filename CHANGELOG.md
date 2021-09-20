@@ -1,7 +1,7 @@
 # Change log
 
-## 0.3.3 2021-09-20
-aloow any version of mix_test_watch in deps()
+## 0.3.4 2021-09-20
+update version of mix_test_watch in deps()
 ## 0.3.2 2021-01-21
 roll back 0.3.1
 ## 0.3.1 2021-01-21

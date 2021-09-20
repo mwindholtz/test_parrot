@@ -4,8 +4,8 @@ defmodule TestParrot.MixProject do
   def project do
     [
       app: :test_parrot,
-      version: "0.3.3",
-      elixir: "~> 1.10",
+      version: "0.3.4",
+      elixir: "~> 1.9.4",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       description: description(),
