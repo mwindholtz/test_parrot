@@ -1,7 +1,10 @@
 # Change log
-## 0.3.2 2021-21-01
+
+## 0.3.3 2021-09-20
+aloow any version of mix_test_watch in deps()
+## 0.3.2 2021-01-21
 roll back 0.3.1
-## 0.3.1 2021-21-01
+## 0.3.1 2021-01-21
 adds: say(fn -> result end)
 ## 0.3.0 2019-12-18
 use TestParrot

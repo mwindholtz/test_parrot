@@ -4,7 +4,7 @@ defmodule TestParrot.MixProject do
   def project do
     [
       app: :test_parrot,
-      version: "0.3.2",
+      version: "0.3.3",
       elixir: "~> 1.10",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
@@ -40,7 +40,7 @@ defmodule TestParrot.MixProject do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:mix_test_watch, "~> 0.9.0", only: :dev, runtime: false}
+      {:mix_test_watch, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 end
