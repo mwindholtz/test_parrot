@@ -50,16 +50,6 @@ defmodule TestParrot.DemoTest do
     assert_receive :heavy_work
   end
 
-  test "using the Parrot to return the result of a function" do
-    # Given
-    MyRepoParrot.say_heavy_work(fn -> {:ok, "result_from_function"} end)
-    # When
-    result = MyModule.my_function(234, MyRepoParrot)
-    # Then
-    assert result == {:ok, "result_from_function234"}
-    assert_receive :heavy_work
-  end
-
   test "calling the real code by default" do
     # Given
     stubbed_data = "Cheeseburger in Paradise"
@@ -69,5 +59,17 @@ defmodule TestParrot.DemoTest do
     # Then
     assert {:ok, "Margaritaville234"} == result
     refute_receive :heavy_work
+  end
+
+  describe "passing in a function" do
+    test "using the Parrot to return the result of a function" do
+      # Given
+      MyRepoParrot.say_heavy_work(fn -> {:ok, "result_from_function"} end)
+      # When
+      result = MyModule.my_function(234, MyRepoParrot)
+      # Then
+      assert result == {:ok, "result_from_function234"}
+      assert_receive :heavy_work
+    end
   end
 end
